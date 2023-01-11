@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Seite</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-primary ">
+        <div class="container">
+            <a class="navbar-brand" href="#"> IT-Artikels</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Start Seite </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-haspopup="true">
+                            Seite Aussicht
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="full.html">Ganze Seite</a>
+                            <a class="dropdown-item" href="right.html">Sidebar rechts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <section class="min-vh-100 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="bg-white shadow rounded-3 p-3 p-md-5">
+                        <h2 class="text-center fs-1 fw-bold">Hinterlassen Sie Ihre Nachricht</h2>
+                        <div class="pt-5">
+                            <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-md-6">
+                                    <label class="form-label">Vorname</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="valid-feedback">
+                                        Vielen Dank!
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="valid-feedback">
+                                        Vielen Dank!
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form-label">Betreff</label>
+                                    <select class="form-select" required>
+                                        <option selected value="">Betrwf wählen...</option>
+                                        <option value="1"> Unterstützung</option>
+                                        <option value="2"> Autor</option>
+                                        <option value="3"> Beschwerde</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Bitte wählen Sie ein Thema
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Vielen Dank!
+                                    </div>
+                                </div>
+                                <div class="col-med-12">
+                                    <label class="form-label"> Nachricht </label>
+                                    <textarea rows="10" class="form-control" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Bitte geben Sie Ihre Nachricht ein.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Vielen Dank!
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" required>
+                                        <label class="form-check-label">
+                                            Akzeptieren Sie Benutzerbedingungen
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Benutzerbedingungen muss akzeptiert werden
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Senden</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark">
+        <p class="py-3 text-white text-center mb-0">
+            © KAPUKAYA · Alle Rechte vorbehalten. | <a class="fst-italic text-danger text-decoration-none"
+                href="">Kapukaya</a>
+        </p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>
